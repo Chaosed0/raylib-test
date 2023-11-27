@@ -1,11 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game-premake", "_build\game-premake.vcxproj", "{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}"
-	ProjectSection(ProjectDependencies) = postProject
-		{8898EA18-743A-15EF-5DF5-284349369C3F} = {8898EA18-743A-15EF-5DF5-284349369C3F}
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_app", "_build\_app.vcxproj", "{05D3927C-F109-940D-9AF6-7910860C100F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8898EA18-743A-15EF-5DF5-284349369C3F} = {8898EA18-743A-15EF-5DF5-284349369C3F}
@@ -25,18 +20,6 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Debug|ARM64.ActiveCfg = Debug|ARM64
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Debug|ARM64.Build.0 = Debug|ARM64
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Debug|Win32.ActiveCfg = Debug|Win32
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Debug|Win32.Build.0 = Debug|Win32
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Debug|x64.ActiveCfg = Debug|x64
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Debug|x64.Build.0 = Debug|x64
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Release|ARM64.ActiveCfg = Release|ARM64
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Release|ARM64.Build.0 = Release|ARM64
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Release|Win32.ActiveCfg = Release|Win32
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Release|Win32.Build.0 = Release|Win32
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Release|x64.ActiveCfg = Release|x64
-		{5197A086-3DFA-2F2B-E67F-68E1D2C1FBAD}.Release|x64.Build.0 = Release|x64
 		{05D3927C-F109-940D-9AF6-7910860C100F}.Debug|ARM64.ActiveCfg = Debug|ARM64
 		{05D3927C-F109-940D-9AF6-7910860C100F}.Debug|ARM64.Build.0 = Debug|ARM64
 		{05D3927C-F109-940D-9AF6-7910860C100F}.Debug|Win32.ActiveCfg = Debug|Win32

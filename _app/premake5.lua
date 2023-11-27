@@ -30,8 +30,11 @@ project (baseName)
 	
 	-- To link to a lib use link_to("LIB_FOLDER_NAME")
 	link_to("lua54")
+	link_to("yyjson")
+	link_to("fastwfc")
 	
 	postbuildcommands {
-		"{COPY} ../lua54/lua54.dll %{cfg.targetdir}",
-		"{COPYDIR} ../lua/ %{cfg.targetdir}/lua/",
+		"{COPY} ../libs/lua54/lua54.dll %{cfg.targetdir}",
+		"{COPY} ../libs/fastwfc/fastwfc.dll %{cfg.targetdir}",
+		"{COPYDIR} ../assets/ %{cfg.targetdir}/assets/",
 	}
