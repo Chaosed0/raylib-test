@@ -20,8 +20,20 @@ end
 function link_to(lib)
     links (lib)
     includedirs ("../libs/"..lib.."/include")
-    includedirs ("../libs/"..lib.."/" )
 	libdirs ("../libs/"..lib.."/")
+end
+
+function link_to_include_only(lib)
+    includedirs ("../libs/"..lib.."/include")
+end
+
+function link_to_src(lib)	
+	vpaths 
+    {
+		["Libraries/*"] = {"../libs/"..lib.."/src/**.c", "../libs/"..lib.."/src/**.cpp","**.c", "../libs/"..lib.."/**.cpp"},
+	}
+	includedirs ("../libs/"..lib.."/include")
+    files {"../libs/"..lib.."/**.c", "../libs/"..lib.."/**.cpp" }
 end
 
 function download_progress(total, current)
@@ -78,7 +90,7 @@ workspace (workspaceName)
 
     targetdir "_bin/%{cfg.buildcfg}/"
 
-    if(os.isdir("_app")) then
+    if(os.isdir("src")) then
         startproject(workspaceName)
     end
 
@@ -88,8 +100,8 @@ check_raylib();
 
 include ("raylib_premake5.lua")
 
-if(os.isdir("_app")) then
-    include ("_app")
+if(os.isdir("src")) then
+    include ("src")
 end
 
 folders = os.matchdirs("*")
